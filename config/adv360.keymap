@@ -40,11 +40,11 @@
 
         default_layer {
             bindings = <
-          &none           &none      &none    &none   &none   &none               &none                                                          &none   &none   &none   &none   &none   &none            &none
-     &caps_word  &kp APOSTROPHE  &kp COMMA  &kp DOT   &kp P   &kp Y               &none                                                          &none   &kp Y   &kp U   &kp I   &kp O   &kp P   &kp UNDERSCORE
-        &kp ESC           &kp A      &kp O    &kp E   &kp U   &kp I               &none    &none   &none                   &none      &none      &none   &kp D   &kp H   &kp T   &kp N   &kp S       &kp DOLLAR
- &sk LEFT_SHIFT   &kp SEMICOLON      &kp Q    &kp J   &kp K   &kp X                                &none                   &none                         &kp B   &kp M   &kp W   &kp V   &kp Z  &sk RIGHT_SHIFT
-          &none           &none      &none    &none   &none                    &kp BSPC  &kp TAB   &none                   &none  &kp ENTER  &kp SPACE           &none   &none   &none   &none            &none
+          &none               &none           &none           &none   &none   &none               &none                                                          &none   &none   &none            &none            &none                &none            &none
+     &caps_word      &kp APOSTROPHE       &kp COMMA         &kp DOT   &kp P   &kp Y               &none                                                          &none   &kp Y   &kp U            &kp I            &kp O                &kp P   &kp UNDERSCORE
+        &kp ESC  &mt A LEFT_CONTROL  &mt O LEFT_ALT  &mt E LEFT_GUI   &kp U   &kp I               &none    &none   &none                   &none      &none      &none   &kp D   &kp H  &mt T RIGHT_GUI  &mt N RIGHT_ALT  &mt S RIGHT_CONTROL       &kp DOLLAR
+ &sk LEFT_SHIFT       &kp SEMICOLON           &kp Q           &kp J   &kp K   &kp X                                &none                   &none                         &kp B   &kp M            &kp W            &kp V                &kp Z  &sk RIGHT_SHIFT
+          &none               &none           &none           &none   &none                    &kp BSPC  &kp TAB   &none                   &none  &kp ENTER  &kp SPACE           &none            &none            &none                &none            &none
             >;
         };
 
