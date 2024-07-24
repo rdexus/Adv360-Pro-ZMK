@@ -37,7 +37,7 @@
 
         default_layer {
             bindings = <
-&none           &none               &none           &none           &none  &none  &none                                           &none      &none  &none  &none            &none            &none                &none
+&none           &none               &none           &none           &none  &none  &none                                           &mo 1      &none  &none  &none            &none            &none                &none
 &caps_word      &kp APOSTROPHE      &kp COMMA       &kp DOT         &kp P  &kp Y  &none                                           &none      &kp Y  &kp U  &kp I            &kp O            &kp P                &kp UNDERSCORE
 &kp ESC         &hm A LEFT_CONTROL  &hm O LEFT_ALT  &hm E LEFT_GUI  &kp U  &kp I  &none     &none    &none      &none  &none      &none      &kp D  &kp H  &hm T RIGHT_GUI  &hm N RIGHT_ALT  &hm S RIGHT_CONTROL  &kp DOLLAR
 &sk LEFT_SHIFT  &kp SEMICOLON       &kp Q           &kp J           &kp K  &kp X                     &none      &none                        &kp B  &kp M  &kp W            &kp V            &kp Z                &sk RIGHT_SHIFT
@@ -50,7 +50,7 @@
 &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans                  &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &none         &none         &bootloader                                            &bootloader             &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &macro_ver    &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &none         &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
             >;
         };
