@@ -1,11 +1,8 @@
-
 /*
  * Copyright (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
  */
-
-
 /* THIS FILE WAS GENERATED!
  *
  * This file was generated automatically. You may or may not want to
@@ -13,50 +10,49 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/rgb.h>
 
 / {
-  behaviors {
-    #include "macros.dtsi"
+    behaviors {
+        #include "macros.dtsi"
     #include "version.dtsi"
 
-    hm: homerow_mods {
-        compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS";
-        #binding-cells = <2>;
-        tapping-term-ms = <200>;
-        quick_tap_ms = <175>;
-        flavor = "tap-preferred";
-        bindings = <&kp>, <&kp>;
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+
+            hold-trigger-on-release;
+        };
     };
-  };
 
     keymap {
         compatible = "zmk,keymap";
 
-
         default_layer {
             bindings = <
-          &none               &none           &none           &none   &none   &none               &none                                                          &none   &none   &none            &none            &none                &none            &none
-     &caps_word      &kp APOSTROPHE       &kp COMMA         &kp DOT   &kp P   &kp Y               &none                                                          &none   &kp Y   &kp U            &kp I            &kp O                &kp P   &kp UNDERSCORE
-        &kp ESC  &mt A LEFT_CONTROL  &mt O LEFT_ALT  &mt E LEFT_GUI   &kp U   &kp I               &none    &none   &none                   &none      &none      &none   &kp D   &kp H  &mt T RIGHT_GUI  &mt N RIGHT_ALT  &mt S RIGHT_CONTROL       &kp DOLLAR
- &sk LEFT_SHIFT       &kp SEMICOLON           &kp Q           &kp J   &kp K   &kp X                                &none                   &none                         &kp B   &kp M            &kp W            &kp V                &kp Z  &sk RIGHT_SHIFT
-          &none               &none           &none           &none   &none                    &kp BSPC  &kp TAB   &none                   &none  &kp ENTER  &kp SPACE           &none            &none            &none                &none            &none
+&none           &none               &none           &none           &none  &none  &none                                           &none      &none  &none  &none            &none            &none                &none
+&caps_word      &kp APOSTROPHE      &kp COMMA       &kp DOT         &kp P  &kp Y  &none                                           &none      &kp Y  &kp U  &kp I            &kp O            &kp P                &kp UNDERSCORE
+&kp ESC         &hm A LEFT_CONTROL  &hm O LEFT_ALT  &hm E LEFT_GUI  &kp U  &kp I  &none     &none    &none      &none  &none      &none      &kp D  &kp H  &hm T RIGHT_GUI  &hm N RIGHT_ALT  &hm S RIGHT_CONTROL  &kp DOLLAR
+&sk LEFT_SHIFT  &kp SEMICOLON       &kp Q           &kp J           &kp K  &kp X                     &none      &none                        &kp B  &kp M  &kp W            &kp V            &kp Z                &sk RIGHT_SHIFT
+&none           &none               &none           &none           &none         &kp BSPC  &kp TAB  &none      &none  &kp ENTER  &kp SPACE         &none  &none            &none            &none                &none
             >;
         };
 
         layer_mod {
             bindings = <
-  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &none                                                                          &trans   &none       &none       &none   &none   &none   &none
-  &none         &none         &none         &none         &none         &none            &bootloader                                                                     &bootloader   &none       &none       &none   &none   &none   &none
-  &none         &none         &none         &none         &none         &none                  &none   &none   &none                  &bt BT_CLR       &none  &rgb_ug RGB_MEFS_CMD 5   &none       &none       &none   &none   &none   &none
-  &none         &none         &none         &none    &macro_ver         &none                                  &none                       &none                                       &none       &none       &none   &none   &none   &none
-  &none         &none         &none         &none         &none                                &none   &none   &none                       &none  &bl BL_TOG         &rgb_ug RGB_TOG          &bl BL_INC  &bl BL_DEC   &none   &none   &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans                  &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &none         &none         &bootloader                                            &bootloader             &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &macro_ver    &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
             >;
         };
-
     };
 };
