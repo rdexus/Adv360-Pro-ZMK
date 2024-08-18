@@ -37,25 +37,35 @@
 
         default_layer {
             bindings = <
-&none           &none               &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &none  &none                                           &mo 3      &none  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &none                &none
+&none           &none               &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &none  &none                                           &mo 4      &none  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &none                &none
 &caps_word      &kp APOSTROPHE      &kp COMMA         &kp DOT               &kp P           &kp Y  &none                                           &none      &kp F  &kp G            &kp C                  &kp R              &kp L                &kp UNDERSCORE
-&kp ESC         &hm LEFT_CONTROL A  &hm LEFT_ALT O    &hm LEFT_GUI E        &kp U           &kp I  &none     &sl 1    &none      &none  &sl 2      &none      &kp D  &kp H            &hm RIGHT_GUI T        &hm RIGHT_ALT N    &hm RIGHT_CONTROL S  &kp DOLLAR
+&kp ESC         &hm LEFT_CONTROL A  &hm LEFT_ALT O    &hm LEFT_GUI E        &kp U           &kp I  &none     &sl 1    &none      &none  &sl 3      &none      &kp D  &kp H            &hm RIGHT_GUI T        &hm RIGHT_ALT N    &hm RIGHT_CONTROL S  &kp DOLLAR
 &sk LEFT_SHIFT  &kp SEMICOLON       &kp Q             &kp J                 &kp K           &kp X                     &none      &none                        &kp B  &kp M            &kp W                  &kp V              &kp Z                &sk RIGHT_SHIFT
 &none           &none               &none             &kp DOWN_ARROW        &kp UP_ARROW           &kp BSPC  &kp TAB  &none      &none  &kp ENTER  &kp SPACE         &kp LEFT_ARROW   &kp RIGHT_ARROW        &none              &none                &none
             >;
         };
 
-        layer_numbers {
+        layer_numbers_left {
             bindings = <
-&none  &none   &none   &none   &none   &none   &none                                  &none  &none   &none   &none   &none   &none   &none
-&none  &none   &none   &none   &none   &none   &none                                  &none  &none   &none   &none   &none   &none   &none
-&none  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &none  &none  &none      &none  &none  &none  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &none
-&none  &none   &none   &none   &none   &none                 &none      &none                &none   &none   &none   &none   &none   &none
-&none  &none   &none   &none   &none           &none  &none  &none      &none  &none  &none          &none   &none   &none   &none   &none
+&none  &none   &none   &none   &none   &none   &none                                  &none  &none  &none  &none  &none  &none  &none
+&none  &none   &none   &none   &none   &none   &none                                  &none  &none  &none  &none  &none  &none  &none
+&none  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &none  &none  &none      &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none   &none   &none   &none   &none                 &none      &none                &none  &none  &none  &none  &none  &none
+&none  &none   &none   &none   &none           &none  &none  &none      &none  &none  &none         &none  &none  &none  &none  &none
             >;
         };
 
-        layer_symbols {
+        layer_numbers_right {
+            bindings = <
+&none  &none  &none  &none  &none  &none  &none                                  &none  &none   &none   &none   &none   &none   &none
+&none  &none  &none  &none  &none  &none  &none                                  &none  &none   &none   &none   &none   &none   &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none      &none  &none  &none  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &none
+&none  &none  &none  &none  &none  &none                &none      &none                &none   &none   &none   &none   &none   &none
+&none  &none  &none  &none  &none         &none  &none  &none      &none  &none  &none          &none   &none   &none   &none   &none
+            >;
+        };
+
+        layer_symbols_left {
             bindings = <
 &none  &none            &none          &none             &none          &none      &none                                  &none  &none      &none     &none          &none  &none         &none
 &none  &none            &kp LESS_THAN  &kp GREATER_THAN  &none          &none      &none                                  &none  &none      &none     &none          &none  &kp PERCENT   &none
