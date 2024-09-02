@@ -33,7 +33,6 @@
             bindings = <&kp>, <&kp>;
 
             hold-trigger-on-release;
-            hold-trigger-key-positions = <22 23 24 25 26 27 40 41 42 43 44 45 54 55 56 57 58 59 71 72 9 10 11>;
         };
 
         hm_r: homerow_mods_right {
@@ -45,7 +44,6 @@
             bindings = <&kp>, <&kp>;
 
             hold-trigger-on-release;
-            hold-trigger-key-positions = <14 15 16 17 18 19 28 29 30 31 32 33 46 47 48 49 50 51 63 64 2 3 4>;
         };
     };
 
