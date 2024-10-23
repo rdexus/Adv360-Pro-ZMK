@@ -68,41 +68,41 @@
 
         layer_numbers_left {
             bindings = <
-&none  &none   &none   &none   &none   &none   &none                                  &none  &none  &none  &none  &none  &none  &none
-&none  &none   &none   &none   &none   &none   &none                                  &none  &none  &none  &none  &none  &none  &none
-&none  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &none  &none  &none      &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none   &none   &none   &none   &none                 &none      &none                &none  &none  &none  &none  &none  &none
-&none  &none   &none   &none   &none           &none  &none  &none      &none  &none  &none         &none  &none  &none  &none  &none
+&none  &none   &none   &none   &none   &none   &none                                       &none   &none  &none  &none  &none  &none  &none
+&none  &none   &none   &none   &none   &none   &none                                       &none   &none  &none  &none  &none  &none  &none
+&none  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &none   &trans  &trans      &trans  &trans  &none   &none  &none  &none  &none  &none  &none
+&none  &none   &none   &none   &none   &none                   &none       &none                   &none  &none  &none  &none  &none  &none
+&none  &none   &none   &none   &none           &trans  &trans  &none       &none   &trans  &trans         &none  &none  &none  &none  &none
             >;
         };
 
         layer_numbers_right {
             bindings = <
-&none  &none  &none  &none  &none  &none  &none                                  &none  &none   &none   &none   &none   &none   &none
-&none  &none  &none  &none  &none  &none  &none                                  &none  &none   &none   &none   &none   &none   &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none      &none  &none  &none  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &none
-&none  &none  &none  &none  &none  &none                &none      &none                &none   &none   &none   &none   &none   &none
-&none  &none  &none  &none  &none         &none  &none  &none      &none  &none  &none          &none   &none   &none   &none   &none
+&none  &none  &none  &none  &none  &none  &none                                       &none   &none   &none   &none   &none   &none   &none
+&none  &none  &none  &none  &none  &none  &none                                       &none   &none   &none   &none   &none   &none   &none
+&none  &none  &none  &none  &none  &none  &none   &trans  &trans      &trans  &trans  &none   &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &none
+&none  &none  &none  &none  &none  &none                  &none       &none                   &none   &none   &none   &none   &none   &none
+&none  &none  &none  &none  &none         &trans  &trans  &none       &none   &trans  &trans          &none   &none   &none   &none   &none
             >;
         };
 
         layer_symbols_left {
             bindings = <
-&none  &none            &none          &none             &none          &none      &none                                  &none  &none  &none  &none  &none  &none  &none
-&none  &none            &kp LESS_THAN  &kp GREATER_THAN  &none          &none      &none                                  &none  &none  &none  &none  &none  &none  &none
-&none  &kp EXCLAMATION  &kp MINUS      &kp PLUS          &kp EQUAL      &kp HASH   &none  &none  &none      &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none            &kp FSLH       &kp ASTERISK      &kp BACKSLASH  &kp GRAVE                &none      &none                &none  &none  &none  &none  &none  &none
-&none  &none            &none          &none             &none                     &none  &none  &none      &none  &none  &none         &none  &none  &none  &none  &none
+&none  &none            &none          &none             &none          &none      &none                                       &none   &none  &none  &none  &none  &none  &none
+&none  &none            &kp LESS_THAN  &kp GREATER_THAN  &none          &none      &none                                       &none   &none  &none  &none  &none  &none  &none
+&none  &kp EXCLAMATION  &kp MINUS      &kp PLUS          &kp EQUAL      &kp HASH   &none   &trans  &trans      &trans  &trans  &none   &none  &none  &none  &none  &none  &none
+&none  &none            &kp FSLH       &kp ASTERISK      &kp BACKSLASH  &kp GRAVE                  &none       &none                   &none  &none  &none  &none  &none  &none
+&none  &none            &none          &none             &none                     &trans  &trans  &none       &none   &trans  &trans         &none  &none  &none  &none  &none
             >;
         };
 
         layer_symbols_right {
             bindings = <
-&none  &none  &none  &none  &none  &none  &none                                  &none  &none      &none     &none          &none         &none        &none
-&none  &none  &none  &none  &none  &none  &none                                  &none  &none      &none     &none          &none         &none        &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none      &none  &none  &none  &kp TILDE  &kp PIPE  &kp AMPERSAND  &kp QUESTION  &kp PERCENT  &none
-&none  &none  &none  &none  &none  &none                &none      &none                &none      &kp AT    &none          &none         &none        &none
-&none  &none  &none  &none  &none         &none  &none  &none      &none  &none  &none             &none     &none          &none         &none        &none
+&none  &none  &none  &none  &none  &none  &none                                       &none   &none      &none     &none          &none         &none        &none
+&none  &none  &none  &none  &none  &none  &none                                       &none   &none      &none     &none          &none         &none        &none
+&none  &none  &none  &none  &none  &none  &none   &trans  &trans      &trans  &trans  &none   &kp TILDE  &kp PIPE  &kp AMPERSAND  &kp QUESTION  &kp PERCENT  &none
+&none  &none  &none  &none  &none  &none                  &none       &none                   &none      &kp AT    &none          &none         &none        &none
+&none  &none  &none  &none  &none         &trans  &trans  &none       &none   &trans  &trans             &none     &none          &none         &none        &none
             >;
         };
 
