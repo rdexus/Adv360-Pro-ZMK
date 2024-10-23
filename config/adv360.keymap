@@ -58,7 +58,7 @@
 
         default_layer {
             bindings = <
-&none           &none                 &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &none  &none                                           &mo 5      &none  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &none                  &none
+&none           &kp MINUS             &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &none  &none                                           &mo 5      &none  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &none                  &none
 &caps_word      &kp APOSTROPHE        &kp COMMA         &kp DOT               &kp P           &kp Y  &none                                           &none      &kp F  &kp G            &kp C                  &kp R              &kp L                  &kp UNDERSCORE
 &kp ESC         &hm_l LEFT_CONTROL A  &hm_l LEFT_ALT O  &hm_l LEFT_GUI E      &kp U           &kp I  &none     &sl 2    &sl 4      &sl 3  &sl 1      &none      &kp D  &kp H            &hm_r RIGHT_GUI T      &hm_r RIGHT_ALT N  &hm_r RIGHT_CONTROL S  &kp DOLLAR
 &sk LEFT_SHIFT  &kp SEMICOLON         &kp Q             &kp J                 &kp K           &kp X                     &none      &none                        &kp B  &kp M            &kp W                  &kp V              &kp Z                  &sk RIGHT_SHIFT
