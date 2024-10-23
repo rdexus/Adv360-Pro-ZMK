@@ -78,11 +78,11 @@
 
         layer_numbers_right {
             bindings = <
-&none  &none  &none  &none  &none  &none  &none                                       &none   &none  &none            &none            &none            &none  &none
-&none  &none  &none  &none  &none  &none  &none                                       &none   &none  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none  &none
-&none  &none  &none  &none  &none  &none  &none   &trans  &trans      &trans  &trans  &none   &none  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none  &none
-&none  &none  &none  &none  &none  &none                  &none       &none                   &none  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none  &none
-&none  &none  &none  &none  &none         &trans  &trans  &none       &none   &trans  &trans         &none            &none            &none            &none  &none
+&none  &none  &none  &none  &none  &none  &none                                       &none   &none  &none            &kp KP_DIVIDE    &kp KP_MULTIPLY  &none         &none
+&none  &none  &none  &none  &none  &none  &none                                       &none   &none  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &none
+&none  &none  &none  &none  &none  &none  &none   &trans  &trans      &trans  &trans  &none   &none  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &none
+&none  &none  &none  &none  &none  &none                  &none       &none                   &none  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none         &none
+&none  &none  &none  &none  &none         &trans  &trans  &none       &none   &trans  &trans         &none            &kp KP_NUMBER_0  &kp KP_DOT       &none         &none
             >;
         };
 
